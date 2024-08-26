@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+}
+h1{
+    color: rgb(40, 38, 38);
+    margin: 1rem;
+    text-shadow: 2px 2px 5px blueviolet;
+    font-weight: 700;
+    text-align: center;
+    top: 3rem;
+    font-size: 5rem;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.im{
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 32%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    filter: grayscale(100%);
+}
+.im:hover{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 32%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    filter: grayscale(0%);
+    filter: drop-shadow(0 0 7px black);
+}
+.im img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
+.im:hover img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: grayscale(0%);
+}
+.im figcaption{
+    bottom: 0;
+    color: white;
+    position: absolute;
+    height: 16%;
+    width: fit-content;
+    font-weight: 700;
+    opacity: 0;
+    text-align: center;
+    font-size: 20px;
+}
+.im:hover figcaption{
+    translate: 1s;
+    bottom: 5%;
+    color: white;
+    opacity: 1;
+    text-shadow: 0 2px 5px blue;
+    transform: translateY(-50%) rotate(360deg);
+}
